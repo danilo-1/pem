@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercicio 1 - TP 3</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../tp1/tp1.html">TP1</a></li>
+            <li><a href="../tp2/tp2.html">TP2</a></li>
+            <li><a href="tp3.html">TP3</a></li>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+        </ul>
+    </nav>
+
+    <h1>Positivos e Negativos</h1>
+
+    <script type="text/javascript">
+        var vet = [8];
+        var pos = [];
+        var neg = [];
+
+        for(var x = 0; x < 8; x++){
+            vet[x] = parseInt(prompt("Digite um numero:"));
+        }
+    
+        for (var x = 0; x < 8; x++){
+            if(vet[x] < 0){
+                neg.push(vet[x]);
+            }
+            else{
+                pos.push(vet[x]);
+            }
+        }
+        for (var x = 0; x < pos.length; x++){           
+            document.write("Vetor Positivo: " + pos[x] + "<br>");
+        }
+        for (var x = 0; x < neg.length; x++){
+            document.write("Vetor Negativo: " + neg[x] + "<br>");
+        }
+    </script>
+</body>
+</html>

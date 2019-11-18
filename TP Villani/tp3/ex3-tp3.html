@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercicio 3 - TP 3</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../tp1/tp1.html">TP1</a></li>
+            <li><a href="../tp2/tp2.html">TP2</a></li>
+            <li><a href="tp3.html">TP3</a></li>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+        </ul>
+    </nav>
+
+    <h1>Somando Pares e Multiplicando Impares</h1>
+
+    <script type="text/javascript">
+        var vet = [10];
+        
+        for(var x = 0; x < 10; x++){
+            vet[x] = parseInt(prompt("Digite um numero:"));
+                if(vet[x] % 2 == 0){
+                    vet[x] = vet[x] + 5;
+                }
+                else{
+                    vet[x] = vet[x] * 5;
+                }
+        }
+
+        for(var x = 0; x < 10; x++){
+            document.write("Vetor alterado: " + vet[x] + "<br>");
+        }
+
+    </script>
+</body>
+</html>

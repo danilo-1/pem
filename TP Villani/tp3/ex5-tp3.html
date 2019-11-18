@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="n-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Enercicio 5 - TP 3</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../tp1/tp1.html">TP1</a></li>
+            <li><a href="../tp2/tp2.html">TP2</a></li>
+            <li><a href="tp3.html">TP3</a></li>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+        </ul>
+    </nav>
+
+    <h1>Numeros iguais antes de digitar 0</h1>
+
+    <script type="text/javascript">
+        var vet = [100];
+        var n = 0;
+        var cont = 0;
+        var t = 0;
+        var a = 0;
+
+        do{
+            vet[a] = parseInt(prompt("Digite um numero:"));
+
+            if(vet[a] != 0){
+                n = vet[a];
+                a++;
+            }
+            else{
+                t = 1;
+            }
+        } while (t == 0);
+
+        for (var i = 0; i < a; i++){
+            if(vet[i] == n){
+                cont = cont + 1;
+            }
+        }
+
+        document.write("Numeros iguais ao ultimo digitado: " + (cont - 1));
+    </script>
+</body>
+</html>

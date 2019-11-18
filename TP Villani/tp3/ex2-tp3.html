@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercicio 2 - TP 3</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../tp1/tp1.html">TP1</a></li>
+            <li><a href="../tp2/tp2.html">TP2</a></li>
+            <li><a href="tp3.html">TP3</a></li>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+        </ul>
+    </nav>
+
+    <h1>Números maiores que 50</h1>
+    
+    <script type="text/javascript">
+        var vet = [8];
+        var c = 0;
+
+        for(var x = 0; x < 8; x++){
+            vet[x] = parseInt(prompt("Digite um numero:"));
+        }
+
+        for(var x = 0; x < 8; x++){
+            if(vet[x] > 50){
+                document.write("Numero acima de 50: " + vet[x] + "<br>");
+                document.write("Posição: " + (x+1) + "<br>");
+            }
+            else {
+                c++;
+            }
+        }
+        if (c == 8){
+            document.write("Não existem numeros maiores que 50");
+        }
+    </script>
+</body>
+</html>

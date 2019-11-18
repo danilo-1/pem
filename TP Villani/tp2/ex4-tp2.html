@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Exercicio 4 - TP2</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="../tp1/tp1.html">TP1</a></li>
+            <li><a href="tp2.html">TP2</a></li>
+            <li><a href="../tp3/tp3.html">TP3</a></li>
+            <li><a href="../index.html">Pagina Inicial</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Tabela de Vinhos</h1>
+
+        <p><b>1-Tinto: <br> </b>
+	        <input type="text" name="tinto" id="tinto">
+        </p>
+
+        <p>
+            <b>2-Branco: <br> </b>
+            <input type="text" name="branco" id="bran">
+        </p>
+	    
+        <p>
+            <b>3-Rosê: <br> </b>
+            <input type="text" name="rose" id="ros">
+        </p>
+	    
+
+        <input type = "button" value = "Verificar" onclick = "vinhos()">
+        
+        <p><strong id="total"></strong></p>
+
+<script>
+     
+     function vinhos() {
+        var tinto = Number(document.all['tinto'].value);
+        var bran = Number(document.all['bran'].value);
+        var ros = Number(document.all['ros'].value);
+        
+        var soma = tinto + bran + ros;
+
+        	if (soma < 50) {
+            	alert("Está faltando números.")
+            } 
+            else {
+                document.write("Porcentagem total de Vinhos:" + "<br> <br>");
+            	document.write("Vinhos Tinto: " + tinto/0.5 + "%" + "<br>" + "Vinhos Branco : " + bran/0.5 + "%" + "<br>" + "Vinhos Rosê: " + ros/0.5 + "%");
+        	}
+    	}
+</script>
+</body>
+</html>
